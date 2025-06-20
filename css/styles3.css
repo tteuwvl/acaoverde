@@ -1,0 +1,185 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo e layout base */
+body {
+  background-color: #1c1e26;
+  color: #f0f0f0;
+  padding-left: 300px;
+  transition: all 0.3s ease;
+}
+
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #20232c;
+  padding: 20px;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+}
+
+.sidebar h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  display: block;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Botão do menu (mobile) */
+.menu-button {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background: #28a745;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* Conteúdo */
+.content {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #218838;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="file"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  background-color: #2b2d38;
+  color: #f0f0f0;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+table th {
+  background-color: #2b2d38;
+  color: #28a745;
+}
+
+table tr:hover {
+  background-color: #2a2f3a;
+}
+
+table img {
+  border-radius: 4px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+
+  .sidebar {
+    left: -300px;
+    z-index: 1000;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #28a745;
+  text-decoration: underline;
+}
