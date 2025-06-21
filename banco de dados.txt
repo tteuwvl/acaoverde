@@ -1,0 +1,8 @@
+banco de dados
+nome: eventos_db
+nome tabela: eventos
+nome tabela: inscricoes
+
+banco de dados
+nome: usuarios
+nome tabela: usuarios
